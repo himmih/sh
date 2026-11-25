@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Александра («Саша») Максимовна Тихонович — Древо Шевелевичей</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+<style>:root{
+  --bg:#f4efe4; --paper:#fbf8f1; --ink:#2a2620; --muted:#7a705f; --rule:#ddd3bf;
+  --shev:#2f4f7a; --stem:#9a4a24; --pior:#3f6b45; --spouse:#7a705f; --lav:#7a4a7a;
+  --doc:#2f7a4f; --oral:#b07a12; --hyp:#6a5aa8; --conf:#b23a3a;
+  --accent:#8a5a1c;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#1a1814; --paper:#24211b; --ink:#ece4d4; --muted:#a39780; --rule:#3a352b;
+  --shev:#7ea3d6; --stem:#e08a5e; --pior:#86c08e; --spouse:#a39780; --lav:#c08ec0;
+  --doc:#5fc48a; --oral:#e0aa3e; --hyp:#a99be6; --conf:#ec7272; --accent:#e0aa3e;
+}}
+:root[data-theme="dark"]{
+  --bg:#1a1814; --paper:#24211b; --ink:#ece4d4; --muted:#a39780; --rule:#3a352b;
+  --shev:#7ea3d6; --stem:#e08a5e; --pior:#86c08e; --spouse:#a39780; --lav:#c08ec0;
+  --doc:#5fc48a; --oral:#e0aa3e; --hyp:#a99be6; --conf:#ec7272; --accent:#e0aa3e;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--paper); color:var(--ink);
+  font:15px/1.5 "PT Sans",system-ui,-apple-system,sans-serif;
+  -webkit-text-size-adjust:100%;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.card-wrap{max-width:560px;margin:0 auto;padding:18px 18px 44px}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:8px}
+.kind{font-size:11.5px;text-transform:uppercase;letter-spacing:.07em;font-weight:700}
+.controls{display:flex;align-items:center;gap:8px}
+.themebtn,.backbtn{
+  border:1px solid var(--rule);background:var(--bg);color:var(--ink);
+  border-radius:16px;padding:3px 10px;cursor:pointer;font:inherit;font-size:12px;
+  text-decoration:none;white-space:nowrap;
+}
+h1.pname{font:700 26px/1.15 "PT Serif",Georgia,serif;margin:0 0 4px}
+.alt{color:var(--muted);font-style:italic;font-family:"PT Serif",Georgia,serif;margin-bottom:4px}
+.kv{display:grid;grid-template-columns:88px 1fr;gap:5px 10px;margin:14px 0 18px;font-size:14.5px}
+.kv dt{color:var(--muted)} .kv dd{margin:0;word-break:break-word}
+h2.sec{
+  font:700 12.5px/1.2 "PT Sans",sans-serif;text-transform:uppercase;
+  letter-spacing:.08em;color:var(--muted);
+  margin:22px 0 9px;border-bottom:1px solid var(--rule);padding-bottom:4px;
+}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{
+  display:inline-block;border:1px solid var(--rule);border-radius:16px;
+  padding:4px 12px;font-size:13.5px;background:var(--bg);color:var(--ink);
+  text-decoration:none;line-height:1.35;
+}
+.chip:hover{border-color:var(--accent);text-decoration:none}
+.fact{display:flex;gap:10px;margin:10px 0;font-size:14.5px;align-items:flex-start}
+.badge{
+  flex:none;font-size:10.5px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.04em;padding:2px 7px;border-radius:4px;
+  margin-top:3px;color:#fff;background:var(--b);white-space:nowrap;
+}
+.srcref{font-size:12.5px;color:var(--muted);margin-top:3px;line-height:1.4}
+@media (max-width:420px){
+  .card-wrap{padding:14px 14px 36px}
+  h1.pname{font-size:23px}
+  .kv{grid-template-columns:76px 1fr;font-size:14px}
+  .fact{gap:8px;font-size:14px}
+}
+</style>
+<script>
+(function(){
+  try{var t=localStorage.getItem("sh.theme");if(t)document.documentElement.dataset.theme=t;}catch(_){}
+})();
+function toggleTheme(){
+  var r=document.documentElement,d=matchMedia("(prefers-color-scheme:dark)").matches;
+  var cur=r.dataset.theme||(d?"dark":"light");
+  r.dataset.theme=cur==="dark"?"light":"dark";
+  try{localStorage.setItem("sh.theme",r.dataset.theme);}catch(_){}
+}
+</script>
+</head>
+<body>
+<main class="card-wrap">
+  <div class="topbar">
+    <div class="kind" style="color:var(--spouse)">Поколение IV</div>
+    <div class="controls">
+      <a class="backbtn" href="../index.html">Все персоны</a>
+      <button class="themebtn" type="button" onclick="toggleTheme()" aria-label="Сменить тему">◐</button>
+    </div>
+  </div>
+  <h1 class="pname">Александра («Саша») Максимовна Тихонович</h1>
+  
+  <dl class="kv">
+    <dt>Родился</dt><dd>—</dd>
+    <dt>Умер</dt><dd>—</dd>
+    <dt>Место</dt><dd>д. Ухвала</dd>
+  </dl>
+  <h2 class="sec">Родители</h2><div class="chips"><a class="chip" href="maksim_t.html">Максим Ананьевич Тиханович (Тихонович)</a><a class="chip" href="pelageya_e.html">Пелагея Максимовна Ермакова (Тихонович)</a></div><h2 class="sec">Факты</h2><div class="fact"><span class="badge" style="--b:var(--oral)">предание</span><div>Брат/сестра Михаила Максимовича (по информации от мамы, заметка владельца)</div></div>
+</main>
+</body>
+</html>
